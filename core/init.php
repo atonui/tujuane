@@ -1,6 +1,6 @@
 <?php
 
-include  'database/connection.php';
+include 'database/connection.php';
 include 'classes/User.php';
 include 'classes/Follow.php';
 include 'classes/Tweet.php';

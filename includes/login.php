@@ -8,6 +8,9 @@ if (isset($_POST['login'])) {
             $error = "Invalid email format";
         } else {
 //            login user
+            if (!$getFromUser->login($email, $password)) {
+                $error = "The email or password is incorrect";
+            }
         }
     } else {
         $error = "Please fill in all fields.";
